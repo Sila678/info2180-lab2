@@ -1,0 +1,104 @@
+body {
+    font-size: 18px;
+    color: #2D3748;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 350px 2fr auto;
+    grid-gap: 30px;
+}
+
+header {grid-area: header;}
+main {grid-area: main;}
+aside {grid-area: aside;}
+footer {grid-area: footer;}
+
+/* ==========HEADER===========  */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /*Center content vertically*/
+    background-color: #63B3ED;
+    color: #FFFFFF;
+}
+
+header img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header h1{
+    font-size: 36px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*===========MAIN================*/
+
+article h2{
+    font-size: 32px;
+    color: #48BB78;
+}
+
+p.post_date{
+    color: #718096;
+}
+
+.post1 img{
+    float: left;
+    width: 250px;
+    height: 300px;
+}
+
+.post2 img{
+    float: right;
+    width: 250px;
+    height: 300px;
+}
+
+hr {
+    border:none;
+    border-top: 3px solid #718096;
+    margin: 20px 0;
+}
+
+/* ==========ASIDE==============*/
+section h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #48BB78;
+}
+
+.about h3 {
+    color: #000000;
+}
+
+.about{
+    background-color: #E2E8F0;
+    padding: 10px;
+}
+
+section a{
+    color:  #4299E1;
+}
+
+aside ul {
+    list-style: none;
+    padding-left: 0%;
+}
+
+/*=============FOOTER===============*/
+footer{
+    background-color: #2C5282;
+    color: #FFFFFF;
+    text-align: center; /*Not exactly centered in the pic.  Need to fix this.*/
+    padding: 20px;
+}
